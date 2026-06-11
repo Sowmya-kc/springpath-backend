@@ -15,6 +15,12 @@ public class TopicResponse {
     private String whyLearn;
     private String whereUsed;
     private String whatBreaks;
+    private String realWorldAnalogy;
+    private String codeExample;
+    private String codeExplanation;
+    private String diagramType;
+    private String interviewQa;
     private Integer orderIndex;
     private String difficulty;
+    private Integer estimatedMinutes;
 }

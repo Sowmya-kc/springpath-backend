@@ -70,6 +70,12 @@ public class TopicService {
         topic.setWhatBreaks(request.getWhatBreaks());
         topic.setOrderIndex(request.getOrderIndex());
         topic.setDifficulty(request.getDifficulty());
+        topic.setRealWorldAnalogy(request.getRealWorldAnalogy());
+        topic.setCodeExample(request.getCodeExample());
+        topic.setCodeExplanation(request.getCodeExplanation());
+        topic.setDiagramType(request.getDiagramType());
+        topic.setInterviewQa(request.getInterviewQa());
+        topic.setEstimatedMinutes(request.getEstimatedMinutes());
 
         Topic updated = topicRepository.save(topic);
         return mapToResponse(updated);
@@ -92,8 +98,14 @@ public class TopicService {
                 topic.getWhyLearn(),
                 topic.getWhereUsed(),
                 topic.getWhatBreaks(),
+                topic.getRealWorldAnalogy(),
+                topic.getCodeExample(),
+                topic.getCodeExplanation(),
+                topic.getDiagramType(),
+                topic.getInterviewQa(),
                 topic.getOrderIndex(),
-                topic.getDifficulty()
+                topic.getDifficulty(),
+                topic.getEstimatedMinutes()
         );
     }
 }

@@ -22,9 +22,17 @@ public class TopicRequest {
     @NotBlank(message = "What breaks is required")
     private String whatBreaks;
 
+    private String realWorldAnalogy;
+    private String codeExample;
+    private String codeExplanation;
+    private String diagramType;
+    private String interviewQa;
+
     @NotNull(message = "Order index is required")
     private Integer orderIndex;
 
     @NotBlank(message = "Difficulty is required")
     private String difficulty;
+
+    private Integer estimatedMinutes;
 }

@@ -23,6 +23,7 @@ public class Topic {
     @Column(columnDefinition = "TEXT")
     private String description;
 
+    // The "why" framework
     @Column(name = "why_learn", columnDefinition = "TEXT")
     private String whyLearn;
 
@@ -32,11 +33,31 @@ public class Topic {
     @Column(name = "what_breaks", columnDefinition = "TEXT")
     private String whatBreaks;
 
+    // Rich content
+    @Column(name = "real_world_analogy", columnDefinition = "TEXT")
+    private String realWorldAnalogy;
+
+    @Column(name = "code_example", columnDefinition = "TEXT")
+    private String codeExample;
+
+    @Column(name = "code_explanation", columnDefinition = "TEXT")
+    private String codeExplanation;
+
+    @Column(name = "diagram_type")
+    private String diagramType;
+
+    // Interview Q&A stored as JSON string
+    @Column(name = "interview_qa", columnDefinition = "TEXT")
+    private String interviewQa;
+
     @Column(name = "order_index", nullable = false)
     private Integer orderIndex;
 
     @Column(nullable = false)
     private String difficulty;
+
+    @Column(name = "estimated_minutes")
+    private Integer estimatedMinutes;
 
     @Column(name = "created_at")
     private LocalDateTime createdAt = LocalDateTime.now();
