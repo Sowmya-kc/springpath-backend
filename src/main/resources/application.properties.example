@@ -1,0 +1,20 @@
+# Database Configuration
+spring.datasource.url=jdbc:postgresql://localhost:5432/springpath_db
+spring.datasource.username=postgres
+spring.datasource.password=YOUR_PASSWORD_HERE
+spring.datasource.driver-class-name=org.postgresql.Driver
+
+# JPA / Hibernate Configuration
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+
+# App Port
+server.port=8080
+
+# JWT Configuration
+jwt.secret=YOUR_JWT_SECRET_HERE
+jwt.expiration=86400000
+
+# Google Gemini AI
+gemini.api.key=YOUR_GEMINI_API_KEY_HERE
