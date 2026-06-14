@@ -14,5 +14,4 @@ spring.jpa.properties.hibernate.format_sql=true
 server.port=8080
 
 # Google Gemini AI
-gemini.api.key=AQ.Ab8RN6JFOC7qU3A9ak5Csk8kCnUkuNqYPFAZmxa8t7uoA0O_zw
-gemini.api.url=https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent
+gemini.api.key= your_api_key_here
