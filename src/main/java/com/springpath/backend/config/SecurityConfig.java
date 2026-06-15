@@ -73,7 +73,7 @@ public class SecurityConfig {
         config.setAllowedOrigins(List.of(
                 "http://localhost:5173",
                 "http://localhost:5174",
-                "https://springpath.vercel.app"  // your Vercel URL (we'll update after deploy)
+                "https://springpath-frontend-a5nsh1fn8-sowmya-k-cs-projects.vercel.app"
         ));
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(List.of("*"));
